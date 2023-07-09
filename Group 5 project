@@ -1,0 +1,40 @@
+/*
+1. ASUKA IMIKAN AKPANUDO
+19/097344018
+
+2. OKORO EBUBECHI OKECHUKWU
+19/097344120
+
+3. OKWUELUM EMMANUELLA UCHENNA 19/097344181
+
+
+4. AKPAN PROMISE MONDAY
+19/097344012
+
+5. NJOKU VERA CHIMAOGE 19/097344174
+*/
+
+#include <iostream>
+
+using namespace std;
+
+double celsiusToKelvin(double celsius) {
+    return celsius + 273.15;
+}
+
+double celsiusToFahrenheit(double celsius) {
+    return (celsius * 9/5) + 32;
+}
+
+int main() {
+    double celsius;
+    cout << "Enter temperature in Celsius: ";
+    cin >> celsius;
+
+    double kelvin = celsiusToKelvin(celsius);
+    double fahrenheit = celsiusToFahrenheit(celsius);
+
+    cout << "Temperature in Kelvin: " << kelvin << endl;
+    cout << "Temperature in Fahrenheit: " << fahrenheit << endl;
+
+    return 0;
